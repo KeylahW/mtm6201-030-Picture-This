@@ -29,12 +29,20 @@ h4 {
   font-weight: 300;
 }
 
-img {
-  display: block;
+@media (max-width: 960px) {
+  img {
+    display: block;
+    float: right;
+  }
 }
+
+
 
 @media (min-width: 960px) {
   .header {
     grid-template-columns: repeat(2, 1fr);
   }
+  
 }
+
+
