@@ -15,8 +15,48 @@
       <h1>Picture This!</h1>
       <h4>My Really Cool Blog Post</h4>
     </div>
-    <img src="images/museum.jpg" alt="placeholder">
+    <!-- Square Image -->
+    <picture>
+    <source srcset="img/museum-480x480.jfif 1x,
+                    img/museum-960x960.jfif 2x,
+                    img/museum-1440x1440.jfif 3x"
+            media="(min-width: 960px)">
 
+    <source srcset="img/museum-640x640.jfif 1x
+                    img/museum-1280x1280.jfif 2x
+                    img/museum-1920x1920.jfif 3x"
+            media="(min-width: 1280px)">
+
+    <source srcset="img/museum-800x800.jfif 1x,
+                    img/museum-1600x1600.jfif 2x,
+                    img/museum-2400x1400.jfif 3x"
+            media="(min-width: 1600px)">
+    <img src="images/museum-480x480.jfif" alt="placeholder">
+    </picture>
+
+    <!-- Landscape Image -->
+    <picture>
+    <source srcset="img/museum-320.png 1x,
+                    img/museum-640.png 2x,
+                    img/museum-960.png 3x"
+            media="(max-width: 320px)">
+
+    <source srcset="img/museum-480.png 1x,
+                    img/museum-960.png 2x,
+                    img/museum-1440.png 3x"
+            media="(max-width: 480px)">
+
+    <source srcset="img/museum-720.png 1x,
+                    img/museum-1440.png 2x,
+                    img/museum-2160.png 3x"
+            media="(max-width: 720px)">
+
+    <source srcset="img/museum-960.png 1x,
+                    img/museum-1920.png 2x,
+                    img/museum-2880.png 3x"
+            media="(max-width: 960px)">
+    <img src="images/museum-320.png" alt="placeholder">
+    </picture>
   </header>
 </body>
 
