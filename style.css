@@ -30,19 +30,26 @@ h4 {
 }
 
 @media (max-width: 960px) {
-  img {
+  .imglandscape {
     display: block;
-    float: right;
+    width:500px;
+  }
+  .imgsquare {
+    display:none;
   }
 }
-
-
 
 @media (min-width: 960px) {
   .header {
     grid-template-columns: repeat(2, 1fr);
   }
-  
+  .imgsquare {
+    display: block;
+    float: right;
+  }
+  .imglandscape{
+    display: none;
+  }
 }
 
 
